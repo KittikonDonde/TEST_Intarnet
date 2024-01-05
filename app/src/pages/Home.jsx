@@ -52,10 +52,10 @@ function Home() {
             <nav class="navbar navbar-expand-lg bg-light shadow-lg">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" class="logo img-fluid" alt="Kind Heart Charity" />
+                        <img src="images/1.jpg" class="logo img-fluid"  />
                         <span>
-                            Kind Heart Charity
-                            <small>Non-profit Organization</small>
+                        Mae Sot Hospital
+                            <small>Mae Sot Hospital Information System</small>
                         </span>
                     </a>
 
@@ -111,12 +111,12 @@ function Home() {
                                 <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="images/slide/volunteer-helping-with-donation-box.jpg" class="carousel-image img-fluid" alt="..." />
+                                            <img src="images/2.jpg" class="carousel-image img-fluid" alt="..." />
 
                                             <div class="carousel-caption d-flex flex-column justify-content-end">
-                                                <h1>be a Kind Heart</h1>
+                                                <h1>Intranet</h1>
 
-                                                <p>Professional charity theme based on Bootstrap 5.2.2</p>
+                                                <p>Welcome to Mae Sot Hospital intranet system</p>
                                             </div>
                                         </div>
 
@@ -156,20 +156,20 @@ function Home() {
                         </div>
                     </div>
                 </section>
-                <section class="section-padding">
+                <section class="section-padding" id="section_2">
                     <div class="container">
                         <div class="row">
 
                             <div class="col-lg-10 col-12 text-center mx-auto">
-                                <h2 class="mb-5">Welcome to Kind Heart Charity</h2>
+                                <h2 class="mb-5">Welcome to Mae Sot Hospital Intranet systemy</h2>
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="donate.html" class="d-block">
-                                        <img src="images/icons/hands.png" class="featured-block-image img-fluid" alt="" />
+                                    <a href="http://www.mhcc.moph.go.th/PMK/pmk.php" class="d-block">
+                                        <img src="images/pmk.jpg" class="featured-block-image img-fluid" alt="" />
 
-                                        <p class="featured-block-text">Become a <strong>volunteer</strong></p>
+                                        <p class="featured-block-text"> <strong>PMK</strong></p>
                                     </a>
                                 </div>
                             </div>
@@ -177,9 +177,9 @@ function Home() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="donate.html" class="d-block">
-                                        <img src="images/icons/heart.png" class="featured-block-image img-fluid" alt="" />
+                                        <img src="images/nurse.ico" class="featured-block-image img-fluid" alt="" />
 
-                                        <p class="featured-block-text"><strong>Caring</strong> Earth</p>
+                                        <p class="featured-block-text"><strong>Nurse Scheduling</strong></p>
                                     </a>
                                 </div>
                             </div>
@@ -208,7 +208,7 @@ function Home() {
                     </div>
                 </section>
 
-                <section class="section-padding section-bg" id="section_2">
+                <section class="section-padding section-bg" id="section_3">
                     <div class="container">
                         <div class="row">
 
