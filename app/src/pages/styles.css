@@ -1,0 +1,30 @@
+/* styles.css */
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 2000ms ease-in; /* ปรับค่า transition เพิ่มเป็น 1000ms (หรือตามต้องการ) */
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 2000ms ease-in; /* ปรับค่า transition เพิ่มเป็น 1000ms (หรือตามต้องการ) */
+}
+.featured-block-image {
+  width: 180px; /* กำหนดความกว้าง */
+  height: auto; /* ความสูงจะปรับแต่ละด้านตามอัตราส่วนของรูปภาพ */
+}
+.navbar-brand {
+  display: flex;
+  align-items: center; /* จัดจุดในแนวตั้ง */
+}
+
+.logo {
+  margin-right: 10px; /* ระยะห่างขวาของ logo กับข้อความ */
+}

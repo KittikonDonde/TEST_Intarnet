@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { CSSTransition } from 'react-transition-group';
+import './styles.css'; // นำเข้าไฟล์สไตล์ CSS
 
 function Home() {
+    const [carouselIndex, setCarouselIndex] = useState(0);
+    const carouselImages = ["images/2.jpg", "images/0.jpg", "images/a.jpg"];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCarouselIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    const activeImageSrc = carouselImages[carouselIndex];
+
     return (
         <div >
             <header class="site-header">
@@ -42,20 +57,18 @@ function Home() {
                                 </li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </header>
             <nav class="navbar navbar-expand-lg bg-light shadow-lg">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="images/1.jpg" class="logo img-fluid"  />
+                        <img src="images/1.jpg" class="logo img-fluid" />
                         <span>
-                        Mae Sot Hospital
+                            Mae Sot Hospital
                             <small>Mae Sot Hospital Information System</small>
                         </span>
                     </a>
-
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -99,9 +112,8 @@ function Home() {
                             <div class="col-lg-12 col-12 p-0">
                                 <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
-
                                         <div class="carousel-item active">
-                                            <img src="images/2.jpg" class="carousel-image img-fluid" alt="..." />
+                                            <img src={activeImageSrc} className="carousel-image img-fluid" alt="..." />
                                             <div class="carousel-caption d-flex flex-column justify-content-end">
                                                 <h1>Intranet</h1>
                                                 <p>Welcome to Mae Sot Hospital intranet system</p>
@@ -118,45 +130,75 @@ function Home() {
                         <div class="row">
 
                             <div class="col-lg-10 col-12 text-center mx-auto">
-                                <h2 class="mb-5">Welcome to Mae Sot Hospital Intranet systemy</h2>
+                                <h2 class="mb-5">ยินดีต้อนรับเข้าสู่ระบบอินทราเน็ตโรงพยาบาลแม่สอด</h2>
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="http://www.mhcc.moph.go.th/PMK/pmk.php" class="d-block">
-                                        <img src="images/pmk.jpg" class="featured-block-image img-fluid" alt="" />
-
-                                        <p class="featured-block-text"> <strong>PMK</strong></p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
-                                <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="donate.html" class="d-block">
-                                        <img src="images/nurse.ico" class="featured-block-image img-fluid" alt="" />
-
-                                        <p class="featured-block-text"><strong>Nurse Scheduling</strong></p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
-                                <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="donate.html" class="d-block">
-                                        <img src="images/icons/receive.png" class="featured-block-image img-fluid" alt="" />
-
-                                        <p class="featured-block-text">Make a <strong>Donation</strong></p>
+                                    <a href="" class="d-block">
+                                        <img src="images/1/22.png" className="featured-block-image img-fluid" alt=""/>
+                                        <p class="featured-block-text"> <strong>จองห้อง</strong></p>
                                     </a>
                                 </div>
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="donate.html" class="d-block">
-                                        <img src="images/icons/scholarship.png" class="featured-block-image img-fluid" alt="" />
+                                    <a href="" class="d-block">
+                                        <img src="images/1/7.png" className="featured-block-image img-fluid" alt=""/>
+                                        <p class="featured-block-text"> <strong>การเงิน</strong></p>
+                                    </a>
+                                </div>
+                            </div>
 
-                                        <p class="featured-block-text"><strong>Scholarship</strong> Program</p>
+                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                                <div class="featured-block d-flex justify-content-center align-items-center">
+                                    <a href="" class="d-block">
+                                        <img src="images/1/12.png" className="featured-block-image img-fluid" alt=""/>
+                                        <p class="featured-block-text"> <strong>คู่มือ</strong></p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                                <div class="featured-block d-flex justify-content-center align-items-center">
+                                    <a href="" class="d-block">
+                                        <img src="images/1/30.png" className="featured-block-image img-fluid" alt=""/>
+                                        <p class="featured-block-text"> <strong>ตัวชี้วัดโรงบาลแม่สอด</strong></p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                                <div class="featured-block d-flex justify-content-center align-items-center">
+                                    <a href="http://www.mhcc.moph.go.th/directions/directions.php" class="d-block">
+                                        <img src="images/1/20.png" className="featured-block-image img-fluid" alt=""/>
+                                        <p class="featured-block-text"> <strong>คำสั่งโรงพยาบาล</strong></p>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                                <div class="featured-block d-flex justify-content-center align-items-center">
+                                    <a href="http://www.mhcc.moph.go.th/telephone/telephonelist.php" class="d-block">
+                                        <img src="images/1/4.png" className="featured-block-image img-fluid" alt=""/>
+                                        <p class="featured-block-text"> <strong>เบอร์โทรศัพท์ภายในหน่วยงาน</strong></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                                <div class="featured-block d-flex justify-content-center align-items-center">
+                                    <a href="http://www.mhcc.moph.go.th/orthepap.php" class="d-block">
+                                        <img src="images/1/39.png" className="featured-block-image img-fluid" alt=""/>
+                                        <p class="featured-block-text"> <strong>แบบฟอร์มเอกสารต่างๆ</strong></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                                <div class="featured-block d-flex justify-content-center align-items-center">
+                                    <a href="http://172.16.190.26/parcel/index.php" class="d-block">
+                                        <img src="images/1/40.png" className="featured-block-image img-fluid" alt=""/>
+                                        <p class="featured-block-text"> <strong>งาน พรส.</strong></p>
                                     </a>
                                 </div>
                             </div>
