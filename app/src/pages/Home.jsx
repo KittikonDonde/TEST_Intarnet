@@ -6,13 +6,11 @@ function Home() {
             <header class="site-header">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-lg-8 col-12 d-flex flex-wrap">
                             <p class="d-flex me-4 mb-0">
                                 <i class="bi-geo-alt me-2"></i>
                                 Akershusstranda 20, 0150 Oslo, Norway
                             </p>
-
                             <p class="d-flex mb-0">
                                 <i class="bi-envelope me-2"></i>
 
@@ -21,7 +19,6 @@ function Home() {
                                 </a>
                             </p>
                         </div>
-
                         <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
                             <ul class="social-icon">
                                 <li class="social-icon-item">
@@ -62,25 +59,20 @@ function Home() {
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="#top">Home</a>
                             </li>
-
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="#section_2">About</a>
                             </li>
-
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="#section_3">Causes</a>
                             </li>
-
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="#section_4">Volunteer</a>
                             </li>
-
                             <li class="nav-item dropdown">
                                 <a class="nav-link click-scroll dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">News</a>
 
@@ -90,11 +82,9 @@ function Home() {
                                     <li><a class="dropdown-item" href="news-detail.html">News Detail</a></li>
                                 </ul>
                             </li>
-
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="#section_6">Contact</a>
                             </li>
-
                             <li class="nav-item ms-3">
                                 <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Donate</a>
                             </li>
@@ -106,53 +96,20 @@ function Home() {
                 <section class="hero-section hero-section-full-height">
                     <div class="container-fluid">
                         <div class="row">
-
                             <div class="col-lg-12 col-12 p-0">
                                 <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
+
                                         <div class="carousel-item active">
                                             <img src="images/2.jpg" class="carousel-image img-fluid" alt="..." />
-
                                             <div class="carousel-caption d-flex flex-column justify-content-end">
                                                 <h1>Intranet</h1>
-
                                                 <p>Welcome to Mae Sot Hospital intranet system</p>
                                             </div>
                                         </div>
-
-                                        <div class="carousel-item">
-                                            <img src="images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg" class="carousel-image img-fluid" alt="..." />
-
-                                            <div class="carousel-caption d-flex flex-column justify-content-end">
-                                                <h1>Non-profit</h1>
-
-                                                <p>You can support us to grow more</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="carousel-item">
-                                            <img src="images/slide/medium-shot-people-collecting-donations.jpg" class="carousel-image img-fluid" alt="..." />
-
-                                            <div class="carousel-caption d-flex flex-column justify-content-end">
-                                                <h1>Humanity</h1>
-
-                                                <p>Please tell your friends about our website</p>
-                                            </div>
-                                        </div>
                                     </div>
-
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-
-                                    <button class="carousel-control-next" type="button" data-bs-target="#hero-slide" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
