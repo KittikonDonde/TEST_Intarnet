@@ -136,7 +136,7 @@ function Home() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="" class="d-block">
-                                        <img src="images/1/22.png" className="featured-block-image img-fluid" alt=""/>
+                                        <img src="images/1/1/3.png" className="featured-block-image img-fluid" alt=""/>
                                         <p class="featured-block-text"> <strong>จองห้อง</strong></p>
                                     </a>
                                 </div>
@@ -145,7 +145,7 @@ function Home() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="" class="d-block">
-                                        <img src="images/1/7.png" className="featured-block-image img-fluid" alt=""/>
+                                        <img src="images/1/1/2.png" className="featured-block-image img-fluid" alt=""/>
                                         <p class="featured-block-text"> <strong>การเงิน</strong></p>
                                     </a>
                                 </div>
@@ -154,7 +154,7 @@ function Home() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="" class="d-block">
-                                        <img src="images/1/12.png" className="featured-block-image img-fluid" alt=""/>
+                                        <img src="images/1/1/1.png" className="featured-block-image img-fluid" alt=""/>
                                         <p class="featured-block-text"> <strong>คู่มือ</strong></p>
                                     </a>
                                 </div>
@@ -163,7 +163,7 @@ function Home() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="" class="d-block">
-                                        <img src="images/1/30.png" className="featured-block-image img-fluid" alt=""/>
+                                        <img src="images/1/1/4.png" className="featured-block-image img-fluid" alt=""/>
                                         <p class="featured-block-text"> <strong>ตัวชี้วัดโรงบาลแม่สอด</strong></p>
                                     </a>
                                 </div>
@@ -172,7 +172,7 @@ function Home() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="http://www.mhcc.moph.go.th/directions/directions.php" class="d-block">
-                                        <img src="images/1/20.png" className="featured-block-image img-fluid" alt=""/>
+                                        <img src="images/1/1/5.png" className="featured-block-image img-fluid" alt=""/>
                                         <p class="featured-block-text"> <strong>คำสั่งโรงพยาบาล</strong></p>
                                     </a>
                                 </div>
@@ -181,7 +181,7 @@ function Home() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="http://www.mhcc.moph.go.th/telephone/telephonelist.php" class="d-block">
-                                        <img src="images/1/4.png" className="featured-block-image img-fluid" alt=""/>
+                                        <img src="images/1/1/6.png" className="featured-block-image img-fluid" alt=""/>
                                         <p class="featured-block-text"> <strong>เบอร์โทรศัพท์ภายในหน่วยงาน</strong></p>
                                     </a>
                                 </div>
@@ -189,7 +189,7 @@ function Home() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="http://www.mhcc.moph.go.th/orthepap.php" class="d-block">
-                                        <img src="images/1/39.png" className="featured-block-image img-fluid" alt=""/>
+                                        <img src="images/1/1/7.png" className="featured-block-image img-fluid" alt=""/>
                                         <p class="featured-block-text"> <strong>แบบฟอร์มเอกสารต่างๆ</strong></p>
                                     </a>
                                 </div>
@@ -197,7 +197,7 @@ function Home() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="http://172.16.190.26/parcel/index.php" class="d-block">
-                                        <img src="images/1/40.png" className="featured-block-image img-fluid" alt=""/>
+                                        <img src="images/1/1/8.png" className="featured-block-image img-fluid" alt=""/>
                                         <p class="featured-block-text"> <strong>งาน พรส.</strong></p>
                                     </a>
                                 </div>
