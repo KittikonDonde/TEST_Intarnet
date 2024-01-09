@@ -28,3 +28,15 @@
 .logo {
   margin-right: 10px; /* ระยะห่างขวาของ logo กับข้อความ */
 }
+.carousel-caption {
+  /* Add your desired styles here */
+  font-size: 20px; /* Adjust the font size */
+  /* You can add more styling properties as needed */
+}
+.custom-heading {
+  font-size: 70px;
+}
+
+.custom-heading1 {
+  font-size: 20px;
+}
