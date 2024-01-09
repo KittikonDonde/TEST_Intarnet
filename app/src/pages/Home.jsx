@@ -62,7 +62,7 @@ function Home() {
             </header>
             <nav class="navbar navbar-expand-lg bg-light shadow-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/">
                         <img src="images/1.jpg" class="logo img-fluid" />
                         <span>
                             Mae Sot Hospital
@@ -75,7 +75,7 @@ function Home() {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#top">Home</a>
+                                <a class="nav-link custom-btn custom-border-btn btn" href="/">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="#section_2">About</a>
@@ -83,24 +83,7 @@ function Home() {
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="#section_3">Causes</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_4">Volunteer</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link click-scroll dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">News</a>
-
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="news.html">News Listing</a></li>
-
-                                    <li><a class="dropdown-item" href="news-detail.html">News Detail</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_6">Contact</a>
-                            </li>
-                            <li class="nav-item ms-3">
-                                <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Donate</a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -128,14 +111,13 @@ function Home() {
                 <section class="section-padding" id="section_2">
                     <div class="container">
                         <div class="row">
-
                             <div class="col-lg-10 col-12 text-center mx-auto">
                                 <h2 class="mb-5">ยินดีต้อนรับเข้าสู่ระบบอินทราเน็ตโรงพยาบาลแม่สอด</h2>
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
+                                    <a href="/Booking" class="d-block">
                                         <img src="images/1/1/3.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>จองห้อง</strong></p>
                                     </a>

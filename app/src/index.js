@@ -4,11 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home';
+import {createBrowserRouter, RouterProvider,} from "react-router-dom";
+import Booking from './pages/Booking';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },{
+    path: "/booking",
+    element: <Booking />,
+  }
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
+    <RouterProvider  router={router}/>
   </React.StrictMode>
 );
 
