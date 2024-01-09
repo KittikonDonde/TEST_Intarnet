@@ -54,8 +54,8 @@ function Booking() {
                     <a class="navbar-brand" href="/">
                         <img src="images/1.jpg" class="logo img-fluid" />
                         <span>
-                            Mae Sot Hospital
-                            <small>Mae Sot Hospital Information System</small>
+                            MaeSot Hospital
+                            <small>MaeSot Hospital Information System</small>
                         </span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,39 +78,32 @@ function Booking() {
                         <h2 class="mb-lg-3">จองห้องต่างๆ</h2>
                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="/Booking" class="d-block">
+                                    <a href="http://www.mhcc.moph.go.th/room_reserve/room_calendar.php" class="d-block">
                                         <img src="images/1/1/3.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>จองห้อง</strong></p>
+                                        <p class="featured-block-text"> <strong>จองห้องประชุม</strong></p>
                                     </a>
                                 </div>
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
+                                    <a href="http://www.mhcc.moph.go.th/room_or/room_calendar.php" class="d-block">
                                         <img src="images/1/1/2.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>การเงิน</strong></p>
+                                        <p class="featured-block-text"> <strong>จองห้องผ่าตัดเก่า</strong></p>
                                     </a>
                                 </div>
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
+                                    <a href="http://www.mhcc.moph.go.th/room_or/room_calendar_show.php" class="d-block">
                                         <img src="images/1/1/1.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>คู่มือ</strong></p>
+                                        <p class="featured-block-text"> <strong>จองห้องผ่าตัดใหม่</strong></p>
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                                <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
-                                        <img src="images/1/1/4.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>ตัวชี้วัดโรงบาลแม่สอด</strong></p>
-                                    </a>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </section>

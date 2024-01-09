@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import { CSSTransition } from 'react-transition-group';
 import './styles.css'; // นำเข้าไฟล์สไตล์ CSS
 import Home from "./Home";
-
-function Indicator() {
+function Finance() {
    
 
     return (
@@ -11,8 +10,42 @@ function Indicator() {
             <header class="site-header">
                 <div class="container">
                     <div class="row">
-                        
-                        
+                        <div class="col-lg-8 col-12 d-flex flex-wrap">
+                            <p class="d-flex me-4 mb-0">
+                                <i class="bi-geo-alt me-2"></i>
+                                Akershusstranda 20, 0150 Oslo, Norway
+                            </p>
+                            <p class="d-flex mb-0">
+                                <i class="bi-envelope me-2"></i>
+
+                                <a href="mailto:info@company.com">
+                                    info@company.com
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                            <ul class="social-icon">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-twitter"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-facebook"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-instagram"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-youtube"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -41,104 +74,53 @@ function Indicator() {
             <main>
                 <section class="testimonial-section section-padding section-bg">
                     <div class="container">
-                    <h2 class="mb-lg-3">ศูนย์ข้อมูลโรงพยาบาลแม่สอด</h2>
                         <div class="row">
+                        <h2 class="mb-lg-3">จองห้องต่างๆ</h2>
                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
+                                    <a href="http://www.mhcc.moph.go.th/payroll/home1.php" class="d-block">
                                         <img src="images/1/1/3.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>สถิติหน่วยงาน</strong></p>
+                                        <p class="featured-block-text"> <strong>เช็คเงินเดือน</strong></p>
                                     </a>
                                 </div>
                             </div>
-
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
-                                        <img src="images/1/1/2.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>สถิติผู้รับบริการ</strong></p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                                <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
+                                    <a href="http://www.mhcc.moph.go.th/p4p/p4p_all.php" class="d-block">
                                         <img src="images/1/1/1.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>ตัวชี้วัดตามนโยบาย</strong></p>
+                                        <p class="featured-block-text"> <strong>เงิน P4P</strong></p>
                                     </a>
                                 </div>
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
-                                        <img src="images/1/1/4.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>ตัวชี้วัดตามแผนยุทธศาสตร์ รพ.</strong></p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                                <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="/Booking" class="d-block">
-                                        <img src="images/1/1/3.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>สาธารณสุขชายแดน</strong></p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                                <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
+                                    <a href="http://www.mhcc.moph.go.th/risk_covid19/risk_all.php" class="d-block">
                                         <img src="images/1/1/2.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>กลุ่มภารกิจด้านการพยาบาล</strong></p>
+                                        <p class="featured-block-text"> <strong>เช็คเงินค่าเสี่ยงภัย</strong></p>
                                     </a>
                                 </div>
                             </div>
 
+                           
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
+                                    <a href="http://www.mhcc.moph.go.th/risk_covid19/sp_all.php" class="d-block">
                                         <img src="images/1/1/1.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>ตัวชี้วัดศูนย์คุณภาพ</strong></p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                                <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
-                                        <img src="images/1/1/4.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>ตัวชีวัดปฐมภูมิ</strong></p>
+                                        <p class="featured-block-text"> <strong>เงินเพิ่มพิเศษโควิด</strong></p>
                                     </a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="/Booking" class="d-block">
-                                        <img src="images/1/1/3.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>เครือข่าย คปส. อ.แม่สอด</strong></p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                                <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
-                                        <img src="images/1/1/2.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>รายงานทางการเงิน/CFO</strong></p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                                <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
+                                    <a href="http://www.mhcc.moph.go.th/risk_covid19/vaccine641125.php" class="d-block">
                                         <img src="images/1/1/1.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>อื่นๆ</strong></p>
+                                        <p class="featured-block-text"> <strong>เงินค่าตอบแทนฉีดวัคซีน</strong></p>
                                     </a>
                                 </div>
                             </div>
+
+                            
                         </div>
                     </div>
                 </section>
@@ -236,4 +218,4 @@ function Indicator() {
         </div>
     );
 }
-export default Indicator;
+export default Finance;

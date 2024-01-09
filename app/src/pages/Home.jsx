@@ -65,8 +65,8 @@ function Home() {
                     <a class="navbar-brand" href="/">
                         <img src="images/1.jpg" class="logo img-fluid" />
                         <span>
-                            Mae Sot Hospital
-                            <small>Mae Sot Hospital Information System</small>
+                            MaeSot Hospital
+                            <small>MaeSot Hospital Information System</small>
                         </span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,7 +99,7 @@ function Home() {
                                             <img src={activeImageSrc} className="carousel-image img-fluid" alt="..." />
                                             <div class="carousel-caption d-flex flex-column justify-content-end">
                                                 <h1 class="custom-heading">Intranet</h1>
-                                                <p class="custom-heading1">Welcome to Mae Sot Hospital intranet system</p>
+                                                <p class="custom-heading1">Welcome to MaeSotHospital intranet system</p>
                                             </div>
                                         </div>
                                     </div>
@@ -126,7 +126,7 @@ function Home() {
 
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
+                                    <a href="/Finance" class="d-block">
                                         <img src="images/1/1/2.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>การเงิน</strong></p>
                                     </a>
