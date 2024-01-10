@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import { CSSTransition } from 'react-transition-group';
 import './styles.css'; // นำเข้าไฟล์สไตล์ CSS
 import Home from "./Home";
-function Booking() {
+function Manual() {
    
 
     return (
         <div >
             <header class="site-header">
-            <div class="container">
+                <div class="container">
                     <div class="row">
                     </div>
                 </div>
@@ -39,33 +39,25 @@ function Booking() {
                 <section class="testimonial-section section-padding section-bg">
                     <div class="container">
                         <div class="row">
-                        <h2 class="mb-lg-3">จองห้องต่างๆ</h2>
+                        <h2 class="mb-lg-3">คู่มือต่างๆ</h2>
                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="http://www.mhcc.moph.go.th/room_reserve/room_calendar.php" class="d-block">
-                                        <img src="images/1/1/10.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>จองห้องประชุม</strong></p>
+                                    <a href="http://www.mhcc.moph.go.th/PMK/pmk.php" class="d-block">
+                                        <img src="images/1/1/1.jpg" className="featured-block-image img-fluid" alt="" />
+                                        <p class="featured-block-text"> <strong>PMK</strong></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                                <div class="featured-block d-flex justify-content-center align-items-center">
+                                    <a href="http://www.mhcc.moph.go.th/Downloads/Computer/IT_Nurse.pdf" class="d-block">
+                                        <img src="images/1/1/2.jpg" className="featured-block-image img-fluid" alt="" />
+                                        <p class="featured-block-text"> <strong>คู่มือ IT Nurse</strong></p>
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                                <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="http://www.mhcc.moph.go.th/room_or/room_calendar.php" class="d-block">
-                                        <img src="images/1/1/9.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>จองห้องผ่าตัดเก่า</strong></p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                                <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="http://www.mhcc.moph.go.th/room_or/room_calendar_show.php" class="d-block">
-                                        <img src="images/1/1/9.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>จองห้องผ่าตัดใหม่</strong></p>
-                                    </a>
-                                </div>
-                            </div>
+                            
 
                             
                         </div>
@@ -165,4 +157,4 @@ function Booking() {
         </div>
     );
 }
-export default Booking;
+export default Manual;

@@ -17,7 +17,7 @@
   transition: opacity 2000ms ease-in; /* ปรับค่า transition เพิ่มเป็น 1000ms (หรือตามต้องการ) */
 }
 .featured-block-image {
-  width: 100px; /* กำหนดความกว้าง */
+  width: 80px; /* กำหนดความกว้าง */
   height: auto; /* ความสูงจะปรับแต่ละด้านตามอัตราส่วนของรูปภาพ */
 }
 .navbar-brand {

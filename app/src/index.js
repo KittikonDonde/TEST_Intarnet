@@ -8,6 +8,7 @@ import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Booking from './pages/Booking';
 import Indicator from './pages/Indicator';
 import Finance from './pages/Finance';
+import Manual from './pages/Manual';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,9 @@ const router = createBrowserRouter([
   },{
     path: "/finance",
     element: <Finance />,
+  },{
+    path: "/manual",
+    element: <Manual />,
   }
 ]);
 

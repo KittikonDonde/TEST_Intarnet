@@ -10,8 +10,6 @@ function Finance() {
             <header class="site-header">
                 <div class="container">
                     <div class="row">
-                        
-                    
                     </div>
                 </div>
             </header>
@@ -45,7 +43,7 @@ function Finance() {
                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="http://www.mhcc.moph.go.th/payroll/home1.php" class="d-block">
-                                        <img src="images/1/1/3.png" className="featured-block-image img-fluid" alt="" />
+                                        <img src="images/1/1/11.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>เช็คเงินเดือน</strong></p>
                                     </a>
                                 </div>
@@ -53,7 +51,7 @@ function Finance() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="http://www.mhcc.moph.go.th/p4p/p4p_all.php" class="d-block">
-                                        <img src="images/1/1/1.png" className="featured-block-image img-fluid" alt="" />
+                                        <img src="images/1/1/11.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>เงิน P4P</strong></p>
                                     </a>
                                 </div>
@@ -62,7 +60,7 @@ function Finance() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="http://www.mhcc.moph.go.th/risk_covid19/risk_all.php" class="d-block">
-                                        <img src="images/1/1/2.png" className="featured-block-image img-fluid" alt="" />
+                                        <img src="images/1/1/13.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>เช็คเงินค่าเสี่ยงภัย</strong></p>
                                     </a>
                                 </div>
@@ -72,7 +70,7 @@ function Finance() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="http://www.mhcc.moph.go.th/risk_covid19/sp_all.php" class="d-block">
-                                        <img src="images/1/1/1.png" className="featured-block-image img-fluid" alt="" />
+                                        <img src="images/1/1/14.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>เงินเพิ่มพิเศษโควิด</strong></p>
                                     </a>
                                 </div>
@@ -80,7 +78,7 @@ function Finance() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="http://www.mhcc.moph.go.th/risk_covid19/vaccine641125.php" class="d-block">
-                                        <img src="images/1/1/1.png" className="featured-block-image img-fluid" alt="" />
+                                        <img src="images/1/1/14.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>เงินค่าตอบแทนฉีดวัคซีน</strong></p>
                                     </a>
                                 </div>
