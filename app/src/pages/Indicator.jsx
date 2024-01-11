@@ -110,7 +110,7 @@ function Indicator() {
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="" class="d-block">
                                         <img src="images/1/1/22.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>ตัวชีวัดปฐมภูมิ</strong></p>
+                                        <p class="featured-block-text"> <strong>ตัวชี้วัดปฐมภูมิ</strong></p>
                                     </a>
                                 </div>
                             </div>
