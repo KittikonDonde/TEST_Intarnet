@@ -41,7 +41,7 @@ function DataForms() {
                 <section class="testimonial-section section-padding section-bg">
                     <div class="container">
                         <div class="row">
-                            <h2 class="mb-lg-3">ศูนย์รวมแบบฟอร์ม และ เอกสารต่างๆ</h2>
+                            <h2 class="mb-lg-3">แบบฟอร์ม และ เอกสารต่างๆ</h2>
                             <a class="navbar-brand" href="http://www.mhcc.moph.go.th/orthepap.php">
                                 <strong>1. แบบฟอร์ม & เอกสาร ต่างๆ</strong>
                             </a>

@@ -102,7 +102,7 @@ function Home() {
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="/Manual" class="d-block">
                                         <img src="images/1/1/1.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>คู่มือ</strong></p>
+                                        <p class="featured-block-text"> <strong>โปรแกรม และ คู่มือต่างๆ</strong></p>
                                     </a>
                                 </div>
                             </div>
@@ -137,7 +137,7 @@ function Home() {
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="/dataforms" class="d-block">
                                         <img src="images/1/1/7.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>ศูนย์รวมแบบฟอร์ม และ เอกสารต่างๆ</strong></p>
+                                        <p class="featured-block-text"> <strong>แบบฟอร์ม และ เอกสารต่างๆ</strong></p>
                                     </a>
                                 </div>
                             </div>
@@ -149,6 +149,7 @@ function Home() {
                                     </a>
                                 </div>
                             </div>
+                           
 
                         </div>
                     </div>

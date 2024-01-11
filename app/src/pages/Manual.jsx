@@ -40,7 +40,7 @@ function Manual() {
                 <section class="testimonial-section section-padding section-bg">
                     <div class="container">
                         <div class="row">
-                        <h2 class="mb-lg-3">คู่มือต่างๆ</h2>
+                        <h2 class="mb-lg-3">โปรแกรม และ คู่มือต่างๆ</h2>
                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="http://www.mhcc.moph.go.th/PMK/pmk.php" class="d-block">
@@ -54,6 +54,14 @@ function Manual() {
                                     <a href="http://www.mhcc.moph.go.th/Downloads/Computer/IT_Nurse.pdf" class="d-block">
                                         <img src="images/1/1/2.jpg" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>คู่มือ IT Nurse</strong></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                                <div class="featured-block d-flex justify-content-center align-items-center">
+                                    <a href="http://www.mhcc.moph.go.th/Downloads/NurseDutyManagement/NurseDutyManagement.php" class="d-block">
+                                        <img src="images/1/1/3.ico" className="featured-block-image img-fluid" alt="" />
+                                        <p class="featured-block-text"> <strong>โปรแกรมจัดตารางเวร</strong></p>
                                     </a>
                                 </div>
                             </div>

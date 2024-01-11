@@ -47,7 +47,7 @@ function Indicator() {
                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="" class="d-block">
-                                        <img src="images/1/1/3.png" className="featured-block-image img-fluid" alt="" />
+                                        <img src="images/1/1/15.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>สถิติหน่วยงาน</strong></p>
                                     </a>
                                 </div>
@@ -56,7 +56,7 @@ function Indicator() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="" class="d-block">
-                                        <img src="images/1/1/2.png" className="featured-block-image img-fluid" alt="" />
+                                        <img src="images/1/1/16.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>สถิติผู้รับบริการ</strong></p>
                                     </a>
                                 </div>
@@ -65,7 +65,7 @@ function Indicator() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="" class="d-block">
-                                        <img src="images/1/1/1.png" className="featured-block-image img-fluid" alt="" />
+                                        <img src="images/1/1/17.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>ตัวชี้วัดตามนโยบาย</strong></p>
                                     </a>
                                 </div>
@@ -74,15 +74,15 @@ function Indicator() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="" class="d-block">
-                                        <img src="images/1/1/4.png" className="featured-block-image img-fluid" alt="" />
+                                        <img src="images/1/1/18.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>ตัวชี้วัดตามแผนยุทธศาสตร์ รพ.</strong></p>
                                     </a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="/Booking" class="d-block">
-                                        <img src="images/1/1/3.png" className="featured-block-image img-fluid" alt="" />
+                                    <a href="" class="d-block">
+                                        <img src="images/1/1/19.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>สาธารณสุขชายแดน</strong></p>
                                     </a>
                                 </div>
@@ -91,7 +91,7 @@ function Indicator() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="" class="d-block">
-                                        <img src="images/1/1/2.png" className="featured-block-image img-fluid" alt="" />
+                                        <img src="images/1/1/20.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>กลุ่มภารกิจด้านการพยาบาล</strong></p>
                                     </a>
                                 </div>
@@ -100,7 +100,7 @@ function Indicator() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="" class="d-block">
-                                        <img src="images/1/1/1.png" className="featured-block-image img-fluid" alt="" />
+                                        <img src="images/1/1/21.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>ตัวชี้วัดศูนย์คุณภาพ</strong></p>
                                     </a>
                                 </div>
@@ -109,15 +109,15 @@ function Indicator() {
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="" class="d-block">
-                                        <img src="images/1/1/4.png" className="featured-block-image img-fluid" alt="" />
+                                        <img src="images/1/1/22.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>ตัวชีวัดปฐมภูมิ</strong></p>
                                     </a>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="/Booking" class="d-block">
-                                        <img src="images/1/1/3.png" className="featured-block-image img-fluid" alt="" />
+                                    <a href="" class="d-block">
+                                        <img src="images/1/1/23.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>เครือข่าย คปส. อ.แม่สอด</strong></p>
                                     </a>
                                 </div>
