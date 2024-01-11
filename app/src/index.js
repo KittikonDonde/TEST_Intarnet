@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home';
-import {createBrowserRouter, RouterProvider,} from "react-router-dom";
+import {createBrowserRouter, Form, RouterProvider,} from "react-router-dom";
 import Booking from './pages/Booking';
 import Indicator from './pages/Indicator';
 import Finance from './pages/Finance';
 import Manual from './pages/Manual';
+import DataForms from './pages/DataForms';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,9 @@ const router = createBrowserRouter([
   },{
     path: "/manual",
     element: <Manual />,
+  },{
+    path: "/dataforms",
+    element: <DataForms />,
   }
 ]);
 
