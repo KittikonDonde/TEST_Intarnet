@@ -118,9 +118,9 @@ function Home() {
 
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="http://www.mhcc.moph.go.th/directions/directions.php" class="d-block">
+                                    <a href="/policy" class="d-block">
                                         <img src="images/1/1/5.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>คำสั่งโรงพยาบาล</strong></p>
+                                        <p class="featured-block-text"> <strong>นโยบายที่สำศัญ</strong></p>
                                     </a>
                                 </div>
                             </div>

@@ -10,6 +10,7 @@ import Indicator from './pages/Indicator';
 import Finance from './pages/Finance';
 import Manual from './pages/Manual';
 import DataForms from './pages/DataForms';
+import Policy from './pages/Policy';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,9 @@ const router = createBrowserRouter([
   },{
     path: "/dataforms",
     element: <DataForms />,
+  },{
+    path: "/policy",
+    element: <Policy />,
   }
 ]);
 

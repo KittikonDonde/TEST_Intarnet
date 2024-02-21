@@ -64,7 +64,7 @@ function DataForms() {
                                 <strong>7. แผนใช้เงินบำรุง 63</strong>
                             </a>
                             <a class="navbar-brand" href="http://www.mhcc.moph.go.th/Downloads/Hospital_Policy/Hospital_Policy1.pdf">
-                                <strong>8. ดาวน์โหลด นโยบายโรงพยาบาลแม่สอด</strong>
+                                <strong>8. คำสั่งคณะกรรมการ</strong>
                             </a>
 
 
