@@ -163,7 +163,7 @@ function Home() {
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <div class="carousel-caption">
-                                                <h4 class="carousel-title">Believe yourselfand make it happen</h4>
+                                                <h4 class="carousel-title">Believe yourself and make it happen</h4>
 
                                             </div>
                                         </div>

@@ -15,23 +15,6 @@ const Footer = () => {
               </p>
             </div>
             <div className="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
-              <ul className="social-icon">
-                <li className="social-icon-item">
-                  <a href="#" className="social-icon-link bi-twitter"></a>
-                </li>
-                <li className="social-icon-item">
-                  <a href="#" className="social-icon-link bi-facebook"></a>
-                </li>
-                <li className="social-icon-item">
-                  <a href="#" className="social-icon-link bi-instagram"></a>
-                </li>
-                <li className="social-icon-item">
-                  <a href="#" className="social-icon-link bi-linkedin"></a>
-                </li>
-                <li className="social-icon-item">
-                  <a href="https://youtube.com/templatemo" className="social-icon-link bi-youtube"></a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

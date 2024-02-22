@@ -66,8 +66,6 @@ function Finance() {
                                     </a>
                                 </div>
                             </div>
-
-                           
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
                                     <a href="http://www.mhcc.moph.go.th/risk_covid19/sp_all.php" class="d-block">
@@ -84,8 +82,6 @@ function Finance() {
                                     </a>
                                 </div>
                             </div>
-
-                            
                         </div>
                     </div>
                 </section>
