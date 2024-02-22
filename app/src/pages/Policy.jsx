@@ -18,7 +18,7 @@ function Policy() {
             <nav class="navbar navbar-expand-lg bg-light shadow-lg">
                 <div class="container">
                     <a class="navbar-brand" href="/">
-                        <img src="images/1.jpg" class="logo img-fluid" />
+                        <img src="images/1.png" class="logo img-fluid" />
                         <span>
                             MaeSot Hospital
                             <small>MaeSot Hospital Information System</small>
