@@ -46,7 +46,7 @@ function Indicator() {
                         <div class="row">
                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="" class="d-block">
+                                    <a href="http://www.mhcc.moph.go.th/it_documents/login.html" class="d-block">
                                         <img src="images/1/1/15.png" className="featured-block-image img-fluid" alt="" />
                                         <p class="featured-block-text"> <strong>สถิติหน่วยงาน</strong></p>
                                     </a>
