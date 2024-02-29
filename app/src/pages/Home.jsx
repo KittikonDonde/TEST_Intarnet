@@ -20,7 +20,7 @@ function Home() {
     return (
         <div >
             <header class="site-header">
-            <div class="container">
+                <div class="container">
                     <div class="row">
                     </div>
                 </div>
@@ -48,7 +48,7 @@ function Home() {
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="#section_3">Causes</a>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -149,8 +149,40 @@ function Home() {
                                     </a>
                                 </div>
                             </div>
-                           
 
+
+                        </div>
+                    </div>
+                </section>
+                <section class="section-padding section-bg" id="section_2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 col-12">
+                                <div class="custom-text-box">
+                                    <h2 class="mb-3">สถานการณ์ฝุ่น</h2>
+                                    <h5 class="mb-3 custom-h5">162 </h5>
+                                    <p class="mb-0">This is a Bootstrap 5.2.2 CSS template for charity organization websites. You can feel free to use it. Please tell your friends about TemplateMo website. Thank you. HTML CSS files updated on 20 Oct 2022.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-12">
+                                <div class="custom-text-box">
+                                <h2 class="mb-3">สถิติผู้มาใช้บริการ</h2>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-12">
+                                            <h5 class="mb-3 custom-h5">5000</h5>
+                                            <p class="mb-0">This is a Bootstrap </p>
+                                        </div>
+                                        <div class="col-lg-4 col-12">
+                                            <h5 class="mb-3 custom-h5">5000</h5>
+                                            <p class="mb-0">This is a Bootstrap</p>
+                                        </div>
+                                        <div class="col-lg-4 col-12">
+                                            <h5 class="mb-3 custom-h5">5000</h5>
+                                            <p class="mb-0">This is a Bootstrap</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
