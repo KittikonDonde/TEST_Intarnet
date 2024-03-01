@@ -65,9 +65,14 @@ function Manual() {
                                     </a>
                                 </div>
                             </div>
-
-                            
-
+                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                                <div class="featured-block d-flex justify-content-center align-items-center">
+                                    <a href="http://172.16.190.6/admin/" class="d-block">
+                                        <img src="images/1/1/1111.png" className="featured-block-image img-fluid" alt="" />
+                                        <p class="featured-block-text"> <strong>ระบบบริหารจัดการศูนย์คอมพิวเตอร์</strong></p>
+                                    </a>
+                                </div>
+                            </div>
                             
                         </div>
                     </div>
