@@ -11,6 +11,7 @@ import Finance from './pages/Finance';
 import Manual from './pages/Manual';
 import DataForms from './pages/DataForms';
 import Policy from './pages/Policy';
+import Agency from './pages/Agency';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,9 @@ const router = createBrowserRouter([
   },{
     path: "/policy",
     element: <Policy />,
+  },{
+    path: "/agency",
+    element: <Agency />,
   }
 ]);
 

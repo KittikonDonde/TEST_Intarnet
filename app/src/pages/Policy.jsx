@@ -42,7 +42,7 @@ function Policy() {
                     <div class="container">
                         <div class="row">
                             <h2 class="mb-lg-3">นโยบายที่สำศัญ</h2>
-                            <a class="navbar-brand" href="">
+                            <a class="navbar-brand" href="images/n1.jpg">
                                 <strong>1. นโยบายด้านสุขภาพอนามัย ความปลอดภัย และสิ่งแวดล้อม</strong>
                             </a>
                             <a class="navbar-brand" href="">
