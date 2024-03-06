@@ -45,31 +45,31 @@ function Policy() {
                             <a class="navbar-brand" href="images/n1.jpg">
                                 <strong>1. นโยบายด้านสุขภาพอนามัย ความปลอดภัย และสิ่งแวดล้อม</strong>
                             </a>
-                            <a class="navbar-brand" href="">
+                            <a class="navbar-brand" href="images/n2.jpg">
                                 <strong>2. นโยบายการพัฒนางานอนามัยสิ่งแวดล้อมตามเกณฑ์ Green&Clean hospital</strong>
                             </a>
-                            <a class="navbar-brand" href="">
+                            <a class="navbar-brand" href="images/n3.jpg">
                                 <strong>3. นโยบายการป้องกันและควบคุมการแพร่กระจายเชื้อวัณโรคในโรงพยาบาล</strong>
                             </a>
-                            <a class="navbar-brand" href="">
+                            <a class="navbar-brand" href="images/n4.jpg">
                                 <strong>4. นโยบายควบคุมการติดเชื้อในโรงพยาบาล</strong>
                             </a>
-                            <a class="navbar-brand" href="">
+                            <a class="navbar-brand" href="images/n5.jpg">
                                 <strong>5. นโยบายความปลอดภัยระบบสารสนเทศ</strong>
                             </a>
                             <a class="navbar-brand" href="">
                                 <strong>6. นโยบายด้านความปลอดภัยโรงพยาบาลแม่สอด</strong>
                             </a>
-                            <a class="navbar-brand" href="">
+                            <a class="navbar-brand" href="images/n7.jpg">
                                 <strong>7. นโยบายโรงพยาบาลส่งเสริมสุขภาพด้านโภชนาการ</strong>
                             </a>
-                            <a class="navbar-brand" href="">
+                            <a class="navbar-brand" href="images/n8.jpg">
                                 <strong>8. นโยบายโรงพยาบาลปลอดบุหรี่ เครื่องดื่มแอลกอฮอล์</strong>
                             </a>
-                            <a class="navbar-brand" href="">
+                            <a class="navbar-brand" href="images/n9.jpg">
                                 <strong>9. นโยบายโรงพยาบาลส่งเสริมสุขภาพ</strong>
                             </a>
-                            <a class="navbar-brand" href="">
+                            <a class="navbar-brand" href="images/n10.jpg">
                                 <strong>10. นโยบายโรงพยาบาลที่ได้มาตรฐานงานอนามัยแม่และเด็ก</strong>
                             </a>
                             <a class="navbar-brand" href="">
