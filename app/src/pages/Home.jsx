@@ -2,10 +2,42 @@ import React, { useState, useEffect } from "react";
 import { CSSTransition } from 'react-transition-group';
 import './styles.css'; // นำเข้าไฟล์สไตล์ CSS
 import Footer from "../Footer";
+import axios from 'axios';
+
+function getCircleColor(aqiValue) {
+    if (aqiValue >= 0 && aqiValue <= 15) {
+        return "circle-skyblue";
+    } else if (aqiValue >= 16 && aqiValue <= 25) {
+        return "circle-green";
+    } else if (aqiValue >= 26 && aqiValue <= 37) {
+        return "circle-yellow";
+    } else if (aqiValue >= 38 && aqiValue <= 75) {
+        return "circle-orange";
+    } else {
+        return "circle-red";
+    }
+}
+function getTextColor(aqiValue) {
+    if (aqiValue >= 0 && aqiValue <= 15) {
+        return "text-container-skyblue";
+    } else if (aqiValue >= 16 && aqiValue <= 25) {
+        return "text-container-green";
+    } else if (aqiValue >= 26 && aqiValue <= 37) {
+        return "text-container-yellow";
+    } else if (aqiValue >= 38 && aqiValue <= 75) {
+        return "text-container-orange";
+    } else {
+        return "text-container-red";
+    }
+}
+
 
 function Home() {
     const [carouselIndex, setCarouselIndex] = useState(0);
     const carouselImages = ["images/2.jpg", "images/0.jpg", "images/a.jpg"];
+    const [sensorData, setSensorData] = useState({
+        pm25: 0,
+    });
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -14,6 +46,44 @@ function Home() {
 
         return () => clearInterval(interval);
     }, []);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get(
+                    'https://www.cmuccdc.org/api/ccdc/value/5046'
+                );
+                const apiData = response.data;
+                setSensorData(apiData);
+            } catch (error) {
+
+            }
+        };
+        fetchData();
+    }, []);
+
+    const aqiValue = sensorData.pm25;
+
+    let message, textColor;
+
+    if (aqiValue >= 0 && aqiValue <= 15) {
+        message = " คุณภาพอากาศดีมาก";
+        textColor = "skyblue";
+    } else if (aqiValue >= 16 && aqiValue <= 25) {
+        message = "คุณภาพอากาศดี";
+        textColor = "green";
+    } else if (aqiValue >= 26 && aqiValue <= 37) {
+        message = "คุณภาพอากาศปานกลาง";
+        textColor = "rgb(181, 181, 12)";
+    } else if (aqiValue >= 38 && aqiValue <= 75) {
+        message = "คุณภาพอากาศเริ่มมีผลกระทบต่อสุขภาพ";
+        textColor = "orange";
+    } else {
+        message = " คุณภาพอากาศมีผลกระทบต่อสุขภาพ";
+        textColor = "red";
+    }
+
+
 
     const activeImageSrc = carouselImages[carouselIndex];
 
@@ -149,37 +219,48 @@ function Home() {
                                     </a>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </section>
-                
+
                 <section class="section-padding section-bg" id="section_2">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-5 col-12">
                                 <div class="custom-text-box">
-                                    <h2 class="mb-3">สถานการณ์ฝุ่น</h2>
-                                    <h5 class="mb-3 custom-h5">162 </h5>
-                                    <p class="mb-0">This is a Bootstrap 5.2.2 CSS template for charity organization websites. You can feel free to use it. Please tell your friends about TemplateMo website. Thank you. HTML CSS files updated on 20 Oct 2022.</p>
+                                    <h2 class="mb-4 text-center">สถานการณ์ฝุ่น PM2.5</h2>
+                                    <div class="row">
+                                        <div className={`circle ${getCircleColor(aqiValue)} col-lg-7 col-12`}>
+                                            <div className={`text-container ${getTextColor(aqiValue)} col-lg-7 col-12`}>
+                                                {aqiValue} &nbsp;
+                                                <span className="span sup-script">μg/m<sup>3</sup></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-7 col-12 ">
+                                            <p class="custom-heading1" style={{ fontSize: '30px', color: textColor, textAlign: 'center' }}>{message}</p>
+                                        </div>
+                                    </div>
+                                    <p class="custom-heading1">จุดตรวจวัดคุณภาพอากาศในพื้นที่ อาคารผู้ป่วยนอกโรงพยาบาลแม่สอด ต.แม่สอด อ.แม่สอด, ตาก</p>
                                 </div>
                             </div>
                             <div class="col-lg-7 col-12">
                                 <div class="custom-text-box">
-                                <h2 class="mb-3">สถิติผู้มาใช้บริการ</h2>
+
+
+                                    <h2 class="mb-4 text-center">สถิติผู้มาใช้บริการ</h2>
                                     <div class="row">
                                         <div class="col-lg-4 col-12">
-                                            <h5 class="mb-3 custom-h5">5000</h5>
-                                            <p class="mb-0">This is a Bootstrap </p>
+                                            <h5 class="mb-3 custom-h5">1905</h5>
+                                            <p class="custom-heading1">คนไทย</p>
                                         </div>
                                         <div class="col-lg-4 col-12">
-                                            <h5 class="mb-3 custom-h5">5000</h5>
-                                            <p class="mb-0">This is a Bootstrap</p>
+                                            <h5 class="mb-3 custom-h5">499</h5>
+                                            <p class="custom-heading1">ต่างชาติ</p>
                                         </div>
                                         <div class="col-lg-4 col-12">
-                                            <h5 class="mb-3 custom-h5">5000</h5>
-                                            <p class="mb-0">This is a Bootstrap</p>
+                                            <h5 class="mb-3 custom-h5">2404</h5>
+                                            <p class="custom-heading1">รวม</p>
                                         </div>
                                     </div>
                                 </div>
@@ -207,7 +288,7 @@ function Home() {
                         </div>
                     </div>
                 </section>
-                
+
             </main>
             <Footer />
         </div>
