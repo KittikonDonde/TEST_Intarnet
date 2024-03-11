@@ -249,6 +249,7 @@ function Home() {
 
 
                                     <h2 class="mb-4 text-center">สถิติผู้มาใช้บริการ</h2>
+                                    <p class="custom-heading1">วันที่ </p>
                                     <div class="row">
                                         <div class="col-lg-4 col-12">
                                             <h5 class="mb-3 custom-h5">1905</h5>
@@ -265,6 +266,141 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="news-section section-padding">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7 col-12">
+                                <div class="news-block">
+                                    <div class="news-block-top">
+                                        <img src="images/news/medium-shot-volunteers-with-clothing-donations.jpg" class="news-image img-fluid" alt="" />
+
+                                        <div class="news-category-block">
+                                            <a href="#" class="category-block-link">
+                                                Lifestyle,
+                                            </a>
+
+                                            <a href="#" class="category-block-link">
+                                                Clothing Donation
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="news-block-info">
+                                        <div class="d-flex mt-2">
+                                            <div class="news-block-date">
+                                                <p>
+                                                    <i class="bi-calendar4 custom-icon me-1"></i>
+                                                    October 12, 2036
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="news-block-title mb-2">
+                                            <h4>Clothing donation to urban area</h4>
+                                        </div>
+
+                                        <div class="news-block-body">
+                                            <p>You are not allowed to21 redistribute this template ZIP file on any other template collection website. Please <a href="https://templatemo.com/contact" target="_blank">contact TemplateMo</a> for more information.</p>
+                                        </div>
+
+
+
+                                        <div class="social-share border-top mt-5 py-4 d-flex flex-wrap align-items-center">
+                                            <div class="tags-block me-auto">
+                                                <a href="#" class="tags-block-link">
+                                                    อ่านเพิ่มเติม
+                                                </a>
+                                            </div>
+
+                                            <div class="d-flex">
+                                                <a href="#" class="social-icon-link bi-facebook"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-12 mx-auto mt-4 mt-lg-0">
+
+                                <h5 class="mt-5 mb-3">เรื่องล่าสุด</h5>
+
+                                <div class="news-block news-block-two-col d-flex mt-4">
+                                    <div class="news-block-two-col-image-wrap">
+                                        <a href="news-detail.html">
+                                            <img src="images/news/africa-humanitarian-aid-doctor.jpg" class="news-image img-fluid" alt="" />
+                                        </a>
+                                    </div>
+
+                                    <div class="news-block-two-col-info">
+                                        <div class="news-block-title mb-2">
+                                            <h6><a href="news-detail.html" class="news-block-title-link">Food donation area</a></h6>
+                                        </div>
+
+                                        <div class="news-block-date">
+                                            <p>
+                                                <i class="bi-calendar4 custom-icon me-1"></i>
+                                                October 16, 2036
+                                            </p>
+                                            <a href="#" class="tags-block-link">
+                                                อ่านเพิ่มเติม
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news-block news-block-two-col d-flex mt-4">
+                                    <div class="news-block-two-col-image-wrap">
+                                        <a href="news-detail.html">
+                                            <img src="images/news/close-up-happy-people-working-together.jpg" class="news-image img-fluid" alt="" />
+                                        </a>
+                                    </div>
+
+                                    <div class="news-block-two-col-info">
+                                        <div class="news-block-title mb-2">
+                                            <h6><a href="news-detail.html" class="news-block-title-link">Volunteering Clean</a></h6>
+                                        </div>
+
+                                        <div class="news-block-date">
+                                            <p>
+                                                <i class="bi-calendar4 custom-icon me-1"></i>
+                                                October 20, 2036
+                                            </p>
+                                            <a href="#" class="tags-block-link">
+                                                อ่านเพิ่มเติม
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="news-block news-block-two-col d-flex mt-4">
+                                    <div class="news-block-two-col-image-wrap">
+                                        <a href="news-detail.html">
+                                            <img src="images/news/close-up-happy-people-working-together.jpg" class="news-image img-fluid" alt="" />
+                                        </a>
+                                    </div>
+
+                                    <div class="news-block-two-col-info">
+                                        <div class="news-block-title mb-2">
+                                            <h6><a href="news-detail.html" class="news-block-title-link">Volunteering Clean</a></h6>
+                                        </div>
+
+                                        <div class="news-block-date">
+                                            <p>
+                                                <i class="bi-calendar4 custom-icon me-1"></i>
+                                                October 20, 2036
+                                            </p>
+                                            <a href="#" class="tags-block-link">
+                                                อ่านเพิ่มเติม
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>
