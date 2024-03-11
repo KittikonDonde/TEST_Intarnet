@@ -12,6 +12,7 @@ import Manual from './pages/Manual';
 import DataForms from './pages/DataForms';
 import Policy from './pages/Policy';
 import Agency from './pages/Agency';
+import UploadNews from './pages/UploadNews';
 
 const router = createBrowserRouter([
   {
@@ -38,7 +39,11 @@ const router = createBrowserRouter([
   },{
     path: "/agency",
     element: <Agency />,
+  },{
+    path: "/uplodenews",
+    element: <UploadNews />,
   }
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
