@@ -48,8 +48,8 @@ const UploadNews = () => {
         }
       });
       alert('News uploaded successfully!');
-      setUploadedImageURL(response.data.imageURL); // ตั้งค่า URL ของรูปภาพที่อัปโหลด
-      fetchNews(); // Refresh news list after upload
+      setUploadedImageURL(response.data); // เปลี่ยนการตั้งค่า URL ของรูปภาพที่อัปโหลด
+      fetchNews(); // รีเฟรชรายการข่าวหลังจากอัปโหลด
     } catch (error) {
       console.error('Error uploading news:', error);
     }
@@ -68,21 +68,22 @@ const UploadNews = () => {
       {uploadedImageURL && (
         <div>
           <h2>Uploaded Image</h2>
-          <img src={uploadedImageURL} alt="Uploaded" />
+          <img src={`http://localhost:5000/${uploadedImageURL}`} alt="Uploaded" />
         </div>
       )}
-
-
-      <h2>News List</h2>
-      <ul>
-        {newsList.map((news) => (
-          <li key={news.id}>
-            <h3>{news.title}</h3>
-            <p>{news.content}</p>
-            <p>Uploaded on: {news.uploaded_at}</p>
-          </li>
-        ))}
-      </ul>
+      <div>
+        <h2>News List</h2>
+        <ul>
+          {newsList.map((news) => (
+            <li key={news.id}>
+              <h3>{news.title}</h3>
+              <p>{news.content}</p>
+              <img src={`http://localhost:5000/uploads/${news.image}`}  width="500" height="500" />
+              <p>Uploaded on: {news.uploaded_at}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

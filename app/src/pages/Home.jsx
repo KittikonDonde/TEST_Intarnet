@@ -270,6 +270,9 @@ function Home() {
                     </div>
                 </section>
                 <section class="news-section section-padding">
+                <div class="col-lg-10 col-12 text-center mx-auto">
+                                <h2 class="mb-5">เรื่องที่หน้าสนใจวันนี้</h2>
+                            </div>
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-7 col-12">

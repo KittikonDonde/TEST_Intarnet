@@ -13,6 +13,7 @@ import DataForms from './pages/DataForms';
 import Policy from './pages/Policy';
 import Agency from './pages/Agency';
 import UploadNews from './pages/UploadNews';
+import NewsList from './pages/NewsList';
 
 const router = createBrowserRouter([
   {
@@ -40,8 +41,11 @@ const router = createBrowserRouter([
     path: "/agency",
     element: <Agency />,
   },{
-    path: "/uplodenews",
+    path: "/uploadnews",
     element: <UploadNews />,
+  },{
+    path: "/newlist",
+    element: <NewsList />,
   }
   
 ]);

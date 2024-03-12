@@ -52,16 +52,23 @@ app.post('/upload', upload.single('file'), (req, res) => {
 });
 
 app.get('/news', (req, res) => {
-    const query = 'SELECT * FROM news'; // คำสั่ง SQL SELECT
-    connection.query(query, (err, result) => {
-      if (err) {
-        console.error('Error fetching news:', err);
-        res.status(500).send('Error fetching news');
-        return;
-      }
-      res.json(result); // ส่งข้อมูลในรูปแบบ JSON กลับไปยังหน้าเว็บ
+  const query = 'SELECT * FROM news';
+  connection.query(query, (err, result) => {
+    if (err) {
+      console.error('Error fetching news:', err);
+      res.status(500).send('Error fetching news');
+      return;
+    }
+    // แปลง backslash (\) เป็น forward slash (/) ใน URL ของรูปภาพ
+    const formattedResult = result.map(news => {
+      return {
+        ...news,
+        image: news.image.replace(/\\/g, '/')
+      };
     });
+    res.json(formattedResult);
   });
+});
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
