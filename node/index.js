@@ -16,6 +16,8 @@ const connection = mysql.createConnection({
   database: 'intranetjs',
 });
 
+app.use('/view-file', express.static('./uploads'))
+
 connection.connect((err) => {
   if (err) {
     console.error('Error connecting to MySQL:', err);
@@ -36,16 +38,19 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 app.post('/upload', upload.single('file'), (req, res) => {
+
   const { title, content } = req.body;
-  const imagePath = req.file.path;
+  console.log( req.file )
+  const { path , filename } = req.file;
 
   const query = 'INSERT INTO news (title, content, image) VALUES (?, ?, ?)';
-  connection.query(query, [title, content, imagePath], (err, result) => {
+  connection.query(query, [title, content, filename], (err, result) => {
     if (err) {
       console.error('Error inserting news details into database:', err);
       res.status(500).send('Error uploading news');
       return;
     }
+
     console.log('News details inserted into database');
     res.status(200).send('News uploaded successfully');
   });

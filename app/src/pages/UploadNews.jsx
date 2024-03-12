@@ -42,6 +42,7 @@ const UploadNews = () => {
     formData.append('content', content);
 
     try {
+      
       const response = await axios.post('http://localhost:5000/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
@@ -78,7 +79,7 @@ const UploadNews = () => {
             <li key={news.id}>
               <h3>{news.title}</h3>
               <p>{news.content}</p>
-              <img src={`http://localhost:5000/uploads/${news.image}`}  width="500" height="500" />
+              <img src={`http://localhost:5000/view-file/${news.image}`}  width="500" height="500" />
               <p>Uploaded on: {news.uploaded_at}</p>
             </li>
           ))}
