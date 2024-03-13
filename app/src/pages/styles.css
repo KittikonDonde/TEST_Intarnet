@@ -145,3 +145,16 @@
   text-align: center; /* จัดการให้ข้อความอยู่กึ่งกลาง */
 
 }
+
+.image-container {
+  width: 100px;
+  height: 100px;
+}
+.truncate-text {
+  display: inline-block;
+  width: 50%; /* กำหนดความกว้างของ element */
+  white-space: nowrap; /* ป้องกันข้อความขึ้นบรรทัดใหม่ */
+  overflow: hidden; /* ซ่อนข้อความที่เกินขนาด */
+  text-overflow: ellipsis; /* ให้ข้อความที่เกินขนาดแสดงเป็น ... */
+  
+}

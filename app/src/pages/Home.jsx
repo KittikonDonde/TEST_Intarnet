@@ -39,6 +39,21 @@ function Home() {
         pm25: 0,
     });
 
+    const [newsList, setNewsList] = useState([]);
+
+    useEffect(() => {
+        fetchNews();
+    }, []);
+
+    const fetchNews = async () => {
+        try {
+            const response = await axios.get('http://localhost:5000/news');
+            setNewsList(response.data);
+        } catch (error) {
+            console.error('Error fetching news:', error);
+        }
+    };
+
     useEffect(() => {
         const interval = setInterval(() => {
             setCarouselIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
@@ -270,48 +285,33 @@ function Home() {
                     </div>
                 </section>
                 <section class="news-section section-padding">
-                <div class="col-lg-10 col-12 text-center mx-auto">
-                                <h2 class="mb-5">เรื่องที่หน้าสนใจวันนี้</h2>
-                            </div>
+                    <div class="col-lg-10 col-12 text-center mx-auto">
+                        <h2 class="mb-5">ประชาสัมพันธ์โรงพยาบาลแม่สอด</h2>
+                    </div>
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-7 col-12">
                                 <div class="news-block">
                                     <div class="news-block-top">
-                                        <img src="images/news/medium-shot-volunteers-with-clothing-donations.jpg" class="news-image img-fluid" alt="" />
-
-                                        <div class="news-category-block">
-                                            <a href="#" class="category-block-link">
-                                                Lifestyle,
-                                            </a>
-
-                                            <a href="#" class="category-block-link">
-                                                Clothing Donation
-                                            </a>
-                                        </div>
+                                        <img src={newsList.length > 0 ? `http://localhost:5000/view-file/${newsList[newsList.length - 1].image}` : ''} class="news-image img-fluid" alt="" />
                                     </div>
-
                                     <div class="news-block-info">
                                         <div class="d-flex mt-2">
                                             <div class="news-block-date">
                                                 <p>
                                                     <i class="bi-calendar4 custom-icon me-1"></i>
-                                                    October 12, 2036
+                                                    {newsList.length > 0 ? new Date(newsList[newsList.length - 1].created_at).toLocaleDateString('th-TH') : ''}
                                                 </p>
                                             </div>
 
                                         </div>
-
                                         <div class="news-block-title mb-2">
-                                            <h4>Clothing donation to urban area</h4>
+                                            <h4>{newsList.length > 0 ? newsList[newsList.length - 1].title : ''}</h4>
                                         </div>
 
                                         <div class="news-block-body">
-                                            <p>You are not allowed to21 redistribute this template ZIP file on any other template collection website. Please <a href="https://templatemo.com/contact" target="_blank">contact TemplateMo</a> for more information.</p>
+                                            <p>{newsList.length > 0 ? newsList[newsList.length - 1].content : ''}</p>
                                         </div>
-
-
-
                                         <div class="social-share border-top mt-5 py-4 d-flex flex-wrap align-items-center">
                                             <div class="tags-block me-auto">
                                                 <a href="#" class="tags-block-link">
@@ -320,7 +320,7 @@ function Home() {
                                             </div>
 
                                             <div class="d-flex">
-                                                <a href="#" class="social-icon-link bi-facebook"></a>
+                                                <a href="https://www.facebook.com/maesothospital.official" class="social-icon-link bi-facebook"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -330,23 +330,25 @@ function Home() {
                             <div class="col-lg-4 col-12 mx-auto mt-4 mt-lg-0">
 
                                 <h5 class="mt-5 mb-3">เรื่องล่าสุด</h5>
-
+                                
                                 <div class="news-block news-block-two-col d-flex mt-4">
                                     <div class="news-block-two-col-image-wrap">
-                                        <a href="news-detail.html">
-                                            <img src="images/news/africa-humanitarian-aid-doctor.jpg" class="news-image img-fluid" alt="" />
-                                        </a>
+                                        <a href="">
+                                            <img
+                                                src={newsList.length > 0 ? `http://localhost:5000/view-file/${newsList[newsList.length - 1].image}` : ''}
+                                                style={{ width: '170px', height: '100px' }}
+                                            />                                        </a>
                                     </div>
 
                                     <div class="news-block-two-col-info">
                                         <div class="news-block-title mb-2">
-                                            <h6><a href="news-detail.html" class="news-block-title-link">Food donation area</a></h6>
+                                            <h6><a href="news-detail.html" class="truncate-text">{newsList.length > 0 ? newsList[newsList.length - 1].title : ''}</a></h6>
                                         </div>
 
                                         <div class="news-block-date">
                                             <p>
                                                 <i class="bi-calendar4 custom-icon me-1"></i>
-                                                October 16, 2036
+                                                {newsList.length > 0 ? new Date(newsList[newsList.length - 2].created_at).toLocaleDateString('th-TH') : ''}
                                             </p>
                                             <a href="#" class="tags-block-link">
                                                 อ่านเพิ่มเติม

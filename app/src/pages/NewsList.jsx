@@ -25,7 +25,7 @@ const NewsList = () => {
           <li key={news.id}>
             <h3>{news.title}</h3>
             <p>{news.content}</p>
-            <img src={`http://localhost:5000/uploads/${news.image}`}  />
+            <img src={`http://localhost:5000/view-file/${news.image}`}  />
             <p>Uploaded on: {news.date}</p>
           </li>
         ))}

@@ -38,13 +38,13 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 app.post('/upload', upload.single('file'), (req, res) => {
-
   const { title, content } = req.body;
-  console.log( req.file )
-  const { path , filename } = req.file;
+  console.log(req.file);
+  const { path, filename } = req.file;
+  const createdAt = new Date().toISOString().slice(0, 19).replace('T', ' ');
 
-  const query = 'INSERT INTO news (title, content, image) VALUES (?, ?, ?)';
-  connection.query(query, [title, content, filename], (err, result) => {
+  const query = 'INSERT INTO news (title, content, image, created_at) VALUES (?, ?, ?, ?)';
+  connection.query(query, [title, content, filename, createdAt], (err, result) => {
     if (err) {
       console.error('Error inserting news details into database:', err);
       res.status(500).send('Error uploading news');
