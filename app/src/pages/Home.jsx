@@ -311,14 +311,9 @@ function Home() {
 
                                         <div class="news-block-body">
                                             <p>{newsList.length > 0 ? newsList[newsList.length - 1].content : ''}</p>
+                                            
                                         </div>
                                         <div class="social-share border-top mt-5 py-4 d-flex flex-wrap align-items-center">
-                                            <div class="tags-block me-auto">
-                                                <a href="#" class="tags-block-link">
-                                                    อ่านเพิ่มเติม
-                                                </a>
-                                            </div>
-
                                             <div class="d-flex">
                                                 <a href="https://www.facebook.com/maesothospital.official" class="social-icon-link bi-facebook"></a>
                                             </div>
@@ -329,99 +324,86 @@ function Home() {
 
                             <div class="col-lg-4 col-12 mx-auto mt-4 mt-lg-0">
 
-                                <h5 class="mt-5 mb-3">เรื่องล่าสุด</h5>
-                                
-                                <div class="news-block news-block-two-col d-flex mt-4">
-                                    <div class="news-block-two-col-image-wrap">
-                                        <a href="">
-                                            <img
-                                                src={newsList.length > 0 ? `http://localhost:5000/view-file/${newsList[newsList.length - 1].image}` : ''}
-                                                style={{ width: '170px', height: '100px' }}
-                                            />                                        </a>
-                                    </div>
+                                <h5 class="mt-5 mb-3">เรื่องก่อนหน้านี้</h5>
 
-                                    <div class="news-block-two-col-info">
-                                        <div class="news-block-title mb-2">
-                                            <h6><a href="news-detail.html" class="truncate-text">{newsList.length > 0 ? newsList[newsList.length - 1].title : ''}</a></h6>
-                                        </div>
-
-                                        <div class="news-block-date">
-                                            <p>
-                                                <i class="bi-calendar4 custom-icon me-1"></i>
-                                                {newsList.length > 0 ? new Date(newsList[newsList.length - 2].created_at).toLocaleDateString('th-TH') : ''}
-                                            </p>
-                                            <a href="#" class="tags-block-link">
-                                                อ่านเพิ่มเติม
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
 
                                 <div class="news-block news-block-two-col d-flex mt-4">
-                                    <div class="news-block-two-col-image-wrap">
-                                        <a href="news-detail.html">
-                                            <img src="images/news/close-up-happy-people-working-together.jpg" class="news-image img-fluid" alt="" />
-                                        </a>
-                                    </div>
-
-                                    <div class="news-block-two-col-info">
-                                        <div class="news-block-title mb-2">
-                                            <h6><a href="news-detail.html" class="news-block-title-link">Volunteering Clean</a></h6>
+                                    <div class="row ">
+                                        <div >
+                                            <a href="/newlist">
+                                                <img
+                                                    src={newsList.length > 0 ? `http://localhost:5000/view-file/${newsList[newsList.length - 2].image}` : ''}
+                                                    style={{ width: '340px', height: '180px' }}
+                                                />                                        </a>
                                         </div>
 
-                                        <div class="news-block-date">
-                                            <p>
-                                                <i class="bi-calendar4 custom-icon me-1"></i>
-                                                October 20, 2036
-                                            </p>
-                                            <a href="#" class="tags-block-link">
-                                                อ่านเพิ่มเติม
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="news-block news-block-two-col d-flex mt-4">
-                                    <div class="news-block-two-col-image-wrap">
-                                        <a href="news-detail.html">
-                                            <img src="images/news/close-up-happy-people-working-together.jpg" class="news-image img-fluid" alt="" />
-                                        </a>
-                                    </div>
-
-                                    <div class="news-block-two-col-info">
-                                        <div class="news-block-title mb-2">
-                                            <h6><a href="news-detail.html" class="news-block-title-link">Volunteering Clean</a></h6>
-                                        </div>
-
-                                        <div class="news-block-date">
-                                            <p>
-                                                <i class="bi-calendar4 custom-icon me-1"></i>
-                                                October 20, 2036
-                                            </p>
-                                            <a href="#" class="tags-block-link">
-                                                อ่านเพิ่มเติม
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-                <section class="testimonial-section section-padding section-bg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-12 mx-auto">
-                                <div id="testimonial-carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div class="carousel-caption">
-                                                <h4 class="carousel-title">Believe yourself and make it happen</h4>
-
+                                        <div class="news-block-two-col-info">
+                                            <div class="news-block-title mb-2">
+                                                <h6><a href="/newlist" class="truncate-text">{newsList.length > 0 ? newsList[newsList.length - 2].title : ''}</a></h6>
+                                            </div>
+                                            <div class="news-block-date">
+                                                <p >
+                                                    <a style={{  float: 'left', marginRight: '150px' }}>
+                                                    <i class="bi-calendar4 custom-icon me-2"></i>
+                                                    {newsList.length > 0 ? new Date(newsList[newsList.length - 2].created_at).toLocaleDateString('th-TH') : ''}
+                                                    </a>
+                                                    <a href="/newlist" class="tags-block-link">
+                                                    อ่านเพิ่มเติม
+                                                </a>
+                                                </p>
                                             </div>
                                         </div>
+
+                                        <div >
+                                            <a href="/newlist2">
+                                                <img
+                                                    src={newsList.length > 0 ? `http://localhost:5000/view-file/${newsList[newsList.length - 3].image}` : ''}
+                                                    style={{ width: '340px', height: '180px' }}
+                                                />                                        </a>
+                                        </div>
+
+                                        <div class="news-block-two-col-info">
+                                            <div class="news-block-title mb-2">
+                                                <h6><a href="/newlist2" class="truncate-text">{newsList.length > 0 ? newsList[newsList.length - 3].title : ''}</a></h6>
+                                            </div>
+                                            <div class="news-block-date">
+                                                <p >
+                                                    <a style={{  float: 'left', marginRight: '150px' }}>
+                                                    <i class="bi-calendar4 custom-icon me-2"></i>
+                                                    {newsList.length > 0 ? new Date(newsList[newsList.length - 3].created_at).toLocaleDateString('th-TH') : ''}
+                                                    </a>
+                                                    <a href="/newlist2" class="tags-block-link">
+                                                    อ่านเพิ่มเติม
+                                                </a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div >
+                                            <a href="/newlist3">
+                                                <img
+                                                    src={newsList.length > 0 ? `http://localhost:5000/view-file/${newsList[newsList.length - 4].image}` : ''}
+                                                    style={{ width: '340px', height: '180px' }}
+                                                />                                        </a>
+                                        </div>
+
+                                        <div class="news-block-two-col-info">
+                                            <div class="news-block-title mb-2">
+                                                <h6><a href="/newlist3" class="truncate-text">{newsList.length > 0 ? newsList[newsList.length - 4].title : ''}</a></h6>
+                                            </div>
+                                            <div class="news-block-date">
+                                                <p >
+                                                    <a style={{  float: 'left', marginRight: '150px' }}>
+                                                    <i class="bi-calendar4 custom-icon me-2"></i>
+                                                    {newsList.length > 0 ? new Date(newsList[newsList.length - 4].created_at).toLocaleDateString('th-TH') : ''}
+                                                    </a>
+                                                    <a href="/newlist3" class="tags-block-link">
+                                                    อ่านเพิ่มเติม
+                                                </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -429,6 +411,7 @@ function Home() {
                         </div>
                     </div>
                 </section>
+                
 
             </main>
             <Footer />

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 
 
-function NewsList() {
+function NewsList2() {
   const [carouselIndex, setCarouselIndex] = useState(0);
 
   const [newsList, setNewsList] = useState([]);
@@ -58,24 +58,24 @@ function NewsList() {
           <div class="container">
             <div class="news-block">
               <div class="news-block-top">
-                <img src={newsList.length > 0 ? `http://localhost:5000/view-file/${newsList[newsList.length - 2].image}` : ''} class="news-image img-fluid" alt="" />
+                <img src={newsList.length > 0 ? `http://localhost:5000/view-file/${newsList[newsList.length - 4].image}` : ''} class="news-image img-fluid" alt="" />
               </div>
               <div class="news-block-info">
                 <div class="d-flex mt-2">
                   <div class="news-block-date">
                     <p>
                       <i class="bi-calendar4 custom-icon me-1"></i>
-                      {newsList.length > 0 ? new Date(newsList[newsList.length - 2].created_at).toLocaleDateString('th-TH') : ''}
+                      {newsList.length > 0 ? new Date(newsList[newsList.length - 4].created_at).toLocaleDateString('th-TH') : ''}
                     </p>
                   </div>
 
                 </div>
                 <div class="news-block-title mb-2" >
-                  <h4 style={{ fontSize: '35px' }}>{newsList.length > 0 ? newsList[newsList.length - 2].title : ''}</h4>
+                  <h4 style={{ fontSize: '35px' }}>{newsList.length > 0 ? newsList[newsList.length - 4].title : ''}</h4>
                 </div>
 
                 <div class="news-block-body" >
-                  <p style={{ fontSize: '20px' }}>{newsList.length > 0 ? newsList[newsList.length - 2].content : ''}</p>
+                  <p style={{ fontSize: '20px' }}>{newsList.length > 0 ? newsList[newsList.length - 4].content : ''}</p>
                 </div>
 
                 <div class="social-share border-top mt-5 py-4 d-flex flex-wrap align-items-center">
@@ -94,4 +94,4 @@ function NewsList() {
   );
 }
 
-export default NewsList;
+export default NewsList2;

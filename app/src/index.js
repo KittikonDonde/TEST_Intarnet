@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home';
 import {createBrowserRouter, Form, RouterProvider,} from "react-router-dom";
@@ -14,6 +13,8 @@ import Policy from './pages/Policy';
 import Agency from './pages/Agency';
 import UploadNews from './pages/UploadNews';
 import NewsList from './pages/NewsList';
+import NewsList1 from './pages/NewsList1';
+import NewsList2 from './pages/NewsList2';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,12 @@ const router = createBrowserRouter([
   },{
     path: "/newlist",
     element: <NewsList />,
+  },{
+    path: "/newlist2",
+    element: <NewsList1 />,
+  },{
+    path: "/newlist3",
+    element: <NewsList2 />,
   }
   
 ]);
