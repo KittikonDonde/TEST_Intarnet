@@ -158,3 +158,20 @@
   text-overflow: ellipsis; /* ให้ข้อความที่เกินขนาดแสดงเป็น ... */
   
 }
+
+.navbar-brand1{
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
+  position: relative;
+}
+
+/*display: inline-block;
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-medium);
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  */

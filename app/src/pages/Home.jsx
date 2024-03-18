@@ -36,9 +36,10 @@ function Home() {
     const [carouselIndex, setCarouselIndex] = useState(0);
     const carouselImages = ["images/2.jpg", "images/0.jpg", "images/a.jpg"];
     const [sensorData, setSensorData] = useState({
-        pm25: 0,
+        AQILast: {
+          PM25: { value: 0 }
+        }
     });
-
     const [newsList, setNewsList] = useState([]);
 
     useEffect(() => {
@@ -61,23 +62,23 @@ function Home() {
 
         return () => clearInterval(interval);
     }, []);
-
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(
-                    'https://www.cmuccdc.org/api/ccdc/value/5046'
+                    'http://air4thai.pcd.go.th/forappV2/getAQI_JSON.php?stationID=76t'
                 );
                 const apiData = response.data;
                 setSensorData(apiData);
-            } catch (error) {
+            } catch {
 
             }
         };
+
         fetchData();
     }, []);
 
-    const aqiValue = sensorData.pm25;
+    const aqiValue = sensorData.AQILast.PM25.value;;
 
     let message, textColor;
 
@@ -123,15 +124,18 @@ function Home() {
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
+                        <ul class="navbar-nav ms-auto ">
                             <li class="nav-item">
-                                <a class="nav-link custom-btn custom-border-btn btn" href="/">Home</a>
+                                <a class="nav-link click-scroll " href="/">หน้าแรก</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_2">About</a>
+                                <a class="nav-link click-scroll " href="#section_2">รายการ</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="#section_3">Causes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4">ประชาสัมพันธ์</a>
                             </li>
 
                         </ul>
@@ -238,7 +242,7 @@ function Home() {
                     </div>
                 </section>
 
-                <section class="section-padding section-bg" id="section_2">
+                <section class="section-padding section-bg" id="section_3">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-5 col-12">
@@ -284,7 +288,7 @@ function Home() {
                         </div>
                     </div>
                 </section>
-                <section class="news-section section-padding">
+                <section class="section-padding" id="section_4">
                     <div class="col-lg-10 col-12 text-center mx-auto">
                         <h2 class="mb-5">ประชาสัมพันธ์โรงพยาบาลแม่สอด</h2>
                     </div>
@@ -311,7 +315,7 @@ function Home() {
 
                                         <div class="news-block-body">
                                             <p>{newsList.length > 0 ? newsList[newsList.length - 1].content : ''}</p>
-                                            
+
                                         </div>
                                         <div class="social-share border-top mt-5 py-4 d-flex flex-wrap align-items-center">
                                             <div class="d-flex">
@@ -334,7 +338,8 @@ function Home() {
                                                 <img
                                                     src={newsList.length > 0 ? `http://localhost:5000/view-file/${newsList[newsList.length - 2].image}` : ''}
                                                     style={{ width: '340px', height: '180px' }}
-                                                />                                        </a>
+                                                />
+                                            </a>
                                         </div>
 
                                         <div class="news-block-two-col-info">
@@ -343,13 +348,13 @@ function Home() {
                                             </div>
                                             <div class="news-block-date">
                                                 <p >
-                                                    <a style={{  float: 'left', marginRight: '150px' }}>
-                                                    <i class="bi-calendar4 custom-icon me-2"></i>
-                                                    {newsList.length > 0 ? new Date(newsList[newsList.length - 2].created_at).toLocaleDateString('th-TH') : ''}
+                                                    <a style={{ float: 'left', marginRight: '150px' }}>
+                                                        <i class="bi-calendar4 custom-icon me-2"></i>
+                                                        {newsList.length > 0 ? new Date(newsList[newsList.length - 2].created_at).toLocaleDateString('th-TH') : ''}
                                                     </a>
                                                     <a href="/newlist" class="tags-block-link">
-                                                    อ่านเพิ่มเติม
-                                                </a>
+                                                        อ่านเพิ่มเติม
+                                                    </a>
                                                 </p>
                                             </div>
                                         </div>
@@ -368,13 +373,13 @@ function Home() {
                                             </div>
                                             <div class="news-block-date">
                                                 <p >
-                                                    <a style={{  float: 'left', marginRight: '150px' }}>
-                                                    <i class="bi-calendar4 custom-icon me-2"></i>
-                                                    {newsList.length > 0 ? new Date(newsList[newsList.length - 3].created_at).toLocaleDateString('th-TH') : ''}
+                                                    <a style={{ float: 'left', marginRight: '150px' }}>
+                                                        <i class="bi-calendar4 custom-icon me-2"></i>
+                                                        {newsList.length > 0 ? new Date(newsList[newsList.length - 3].created_at).toLocaleDateString('th-TH') : ''}
                                                     </a>
                                                     <a href="/newlist2" class="tags-block-link">
-                                                    อ่านเพิ่มเติม
-                                                </a>
+                                                        อ่านเพิ่มเติม
+                                                    </a>
                                                 </p>
                                             </div>
                                         </div>
@@ -393,17 +398,17 @@ function Home() {
                                             </div>
                                             <div class="news-block-date">
                                                 <p >
-                                                    <a style={{  float: 'left', marginRight: '150px' }}>
-                                                    <i class="bi-calendar4 custom-icon me-2"></i>
-                                                    {newsList.length > 0 ? new Date(newsList[newsList.length - 4].created_at).toLocaleDateString('th-TH') : ''}
+                                                    <a style={{ float: 'left', marginRight: '150px' }}>
+                                                        <i class="bi-calendar4 custom-icon me-2"></i>
+                                                        {newsList.length > 0 ? new Date(newsList[newsList.length - 4].created_at).toLocaleDateString('th-TH') : ''}
                                                     </a>
                                                     <a href="/newlist3" class="tags-block-link">
-                                                    อ่านเพิ่มเติม
-                                                </a>
+                                                        อ่านเพิ่มเติม
+                                                    </a>
                                                 </p>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -411,7 +416,7 @@ function Home() {
                         </div>
                     </div>
                 </section>
-                
+
 
             </main>
             <Footer />
