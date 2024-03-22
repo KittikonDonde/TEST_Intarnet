@@ -138,7 +138,7 @@ function Home() {
                                 <a class="nav-link click-scroll" href="#section_4">ประชาสัมพันธ์</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link custom-btn custom-border-btn btn" href="">Login</a>
+                                <a class="nav-link custom-btn custom-border-btn btn" href="/login">Login</a>
                             </li>
 
                         </ul>

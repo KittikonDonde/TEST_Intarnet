@@ -77,10 +77,9 @@ function UploadForm() {
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link custom-btn custom-border-btn btn" href="/">Home</a>
-                                </li>
-
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll " href="/">หน้าแรก</a>
+                            </li>
                             </ul>
                         </div>
                     </div>
