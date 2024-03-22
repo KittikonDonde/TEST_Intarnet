@@ -16,6 +16,7 @@ import NewsList from './pages/NewsList';
 import NewsList1 from './pages/NewsList1';
 import NewsList2 from './pages/NewsList2';
 import UploadForm from './pages/UploadForm';
+import Login from './pages/Login';
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,9 @@ const router = createBrowserRouter([
   },{
     path: "/uploadform",
     element: <UploadForm />,
+  },{
+    path: "/login",
+    element: <Login />,
   }
   
 ]);
