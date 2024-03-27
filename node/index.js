@@ -2,12 +2,14 @@ const express = require('express');
 const cors = require('cors');
 const multer = require('multer');
 const mysql = require('mysql');
+const bodyParser = require('body-parser');
 
 const app = express();
 const port = 5000;
 
 // Allow all origins for CORS (for development purposes)
 app.use(cors());
+app.use(bodyParser.json());
 
 const connection = mysql.createConnection({
   host: 'localhost',
@@ -16,7 +18,31 @@ const connection = mysql.createConnection({
   database: 'intranetjs',
 });
 
+//connection.connect();
+app.post('/login', (req, res) => {
+  const { username, password } = req.body;
+  // คำสั่ง SQL เพื่อค้นหาผู้ใช้จากฐานข้อมูล
+  const sql = `SELECT * FROM users WHERE username = ? AND password = ?`;
+  // ทำการ query ฐานข้อมูล
+  connection.query(sql, [username, password], (err, result) => {
+      if (err) {
+          // กรณีเกิดข้อผิดพลาดในการเชื่อมต่อกับฐานข้อมูล
+          console.error(err);
+          res.status(500).json({ success: false, message: 'Internal Server Error' });
+      } else {
+          // ตรวจสอบว่ามีผู้ใช้งานที่ตรงกับข้อมูลที่รับมาหรือไม่
+          if (result.length > 0) {
+            
+              res.json({ success: true, message: 'Login successful', user: result[0] });
+          } else {
+              res.status(401).json({ success: false, message: 'Invalid username or password' });
+          }
+      }
+  });
+});
+
 app.use('/view-file', express.static('./uploads'))
+
 
 connection.connect((err) => {
   if (err) {
