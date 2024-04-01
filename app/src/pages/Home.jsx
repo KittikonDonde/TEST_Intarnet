@@ -85,7 +85,7 @@ function Home() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:3008/api/data'); // เรียกใช้ API จากเซิร์ฟเวอร์ localhost:3008
+                const response = await axios.get('http://172.16.190.26:3008/api/data'); // เรียกใช้ API จากเซิร์ฟเวอร์ localhost:3008
                 setData(response.data); // กำหนดข้อมูลที่ได้รับเข้าสู่ state
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -299,7 +299,8 @@ function Home() {
                                             <p class="custom-heading1">ต่างชาติ</p>
                                         </div>
                                         <div class="col-lg-4 col-12">
-                                            <h5 class="mb-3 custom-h5">2404</h5>
+                                        <h5 className="mb-3 custom-h5">{(count_native?.count_native_99 || 0) + (count_native?.count_native_not_99 || 0)}</h5>
+
                                             <p class="custom-heading1">รวม</p>
                                         </div>
                                     </div>
