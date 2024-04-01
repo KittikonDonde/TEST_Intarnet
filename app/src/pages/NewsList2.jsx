@@ -16,7 +16,7 @@ function NewsList2() {
 
   const fetchNews = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/news');
+      const response = await axios.get('http://172.16.190.26:5000/news');
       setNewsList(response.data);
     } catch (error) {
       console.error('Error fetching news:', error);
@@ -57,7 +57,7 @@ function NewsList2() {
           <div class="container">
             <div class="news-block">
               <div class="news-block-top">
-                <img src={newsList.length > 0 ? `http://localhost:5000/view-file/${newsList[newsList.length - 4].image}` : ''} class="news-image img-fluid" alt="" />
+                <img src={newsList.length > 0 ? `http://172.16.190.26:5000/view-file/${newsList[newsList.length - 4].image}` : ''} class="news-image img-fluid" alt="" />
               </div>
               <div class="news-block-info">
                 <div class="d-flex mt-2">

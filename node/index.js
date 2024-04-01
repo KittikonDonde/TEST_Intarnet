@@ -12,9 +12,9 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '', // Enter your MySQL password here
+  host: '172.16.190.26',
+  user: 'jump',
+  password: 'server401417', // Enter your MySQL password here
   database: 'intranetjs',
 });
 
