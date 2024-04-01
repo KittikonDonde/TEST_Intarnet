@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const oracledb = require('oracledb');
+const cors = require('cors');
 
 // เริ่มต้นเชื่อมต่อกับฐานข้อมูล Oracle
 async function init() {
@@ -18,6 +19,8 @@ async function init() {
 
 // เรียกใช้ฟังก์ชันเชื่อมต่อฐานข้อมูล
 init();
+
+app.use(cors());
 
 // สร้าง API เพื่อดึงข้อมูลจากฐานข้อมูล Oracle
 app.get('/api/data', async (req, res) => {
@@ -37,8 +40,8 @@ app.get('/api/data', async (req, res) => {
         `);
         // Constructing JSON response with the counts of Thai and foreign patients
         const data = {
-            "คนไทย": result.rows[0][0],
-            "ต่างชาติ": result.rows[0][1]
+            count_native_99 : result.rows[0][0],
+            count_native_not_99 : result.rows[0][1]
         };
         res.json(data);
     } catch (err) {

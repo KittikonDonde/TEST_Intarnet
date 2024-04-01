@@ -3,6 +3,7 @@ import { CSSTransition } from 'react-transition-group';
 import './styles.css'; // นำเข้าไฟล์สไตล์ CSS
 import Footer from "../Footer";
 import axios from 'axios';
+import moment from 'moment';
 
 function getCircleColor(aqiValue) {
     if (aqiValue >= 0 && aqiValue <= 15) {
@@ -37,10 +38,11 @@ function Home() {
     const carouselImages = ["images/2.jpg", "images/0.jpg", "images/a.jpg"];
     const [sensorData, setSensorData] = useState({
         AQILast: {
-          PM25: { value: 0 }
+            PM25: { value: 0 }
         }
     });
     const [newsList, setNewsList] = useState([]);
+    const currentDate = moment().format('DD/MM/YYYY');
 
     useEffect(() => {
         fetchNews();
@@ -78,6 +80,21 @@ function Home() {
         fetchData();
     }, []);
 
+    const [count_native, setData] = useState(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('http://localhost:3008/api/data'); // เรียกใช้ API จากเซิร์ฟเวอร์ localhost:3008
+                setData(response.data); // กำหนดข้อมูลที่ได้รับเข้าสู่ state
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData(); // เรียกใช้งานฟังก์ชัน fetchData เมื่อ component โหลดเสร็จสมบูรณ์
+    }, []);
+
     const aqiValue = sensorData.AQILast.PM25.value;;
 
     let message, textColor;
@@ -105,7 +122,7 @@ function Home() {
 
     return (
         <div >
-            <header class="site-header">
+            <header className="site-header">
                 <div class="container">
                     <div class="row">
                     </div>
@@ -271,14 +288,14 @@ function Home() {
 
 
                                     <h2 class="mb-4 text-center">สถิติผู้มาใช้บริการ</h2>
-                                    <p class="custom-heading1">วันที่ </p>
+                                    <p class="custom-heading1">วันที่ {currentDate} </p>
                                     <div class="row">
                                         <div class="col-lg-4 col-12">
-                                            <h5 class="mb-3 custom-h5">1905</h5>
+                                            <h5 class="mb-3 custom-h5">{count_native?.count_native_99}</h5>
                                             <p class="custom-heading1">คนไทย</p>
                                         </div>
                                         <div class="col-lg-4 col-12">
-                                            <h5 class="mb-3 custom-h5">499</h5>
+                                            <h5 class="mb-3 custom-h5">{count_native?.count_native_not_99}</h5>
                                             <p class="custom-heading1">ต่างชาติ</p>
                                         </div>
                                         <div class="col-lg-4 col-12">

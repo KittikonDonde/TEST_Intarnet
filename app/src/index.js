@@ -17,6 +17,7 @@ import NewsList1 from './pages/NewsList1';
 import NewsList2 from './pages/NewsList2';
 import UploadForm from './pages/UploadForm';
 import Login from './pages/Login';
+import App from './pages/App';
 
 const router = createBrowserRouter([
   {
@@ -61,6 +62,9 @@ const router = createBrowserRouter([
   },{
     path: "/login",
     element: <Login />,
+  },{
+    path: "/app",
+    element: <App />,
   }
   
 ]);
