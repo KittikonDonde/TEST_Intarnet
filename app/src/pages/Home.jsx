@@ -280,7 +280,7 @@ function Home() {
                                             <p class="custom-heading1" style={{ fontSize: '30px', color: textColor, textAlign: 'center' }}>{message}</p>
                                         </div>
                                     </div>
-                                    <p class="custom-heading1">จุดตรวจวัดคุณภาพอากาศในพื้นที่ อาคารผู้ป่วยนอกโรงพยาบาลแม่สอด ต.แม่สอด อ.แม่สอด, ตาก</p>
+                                    <p class="custom-heading1">จุดตรวจวัดคุณภาพอากาศในพื้นที่ อาคารผู้ป่วยนอก<br></br>โรงพยาบาลแม่สอด ต.แม่สอด อ.แม่สอด, ตาก</p>
                                 </div>
                             </div>
                             <div class="col-lg-7 col-12">
