@@ -14,7 +14,7 @@ const UploadNews = () => {
 
   const fetchNews = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/news');
+      const response = await axios.get('http://172.16.190.26:5000/news');
       setNewsList(response.data);
     } catch (error) {
       console.error('Error fetching news:', error);

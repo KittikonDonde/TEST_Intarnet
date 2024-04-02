@@ -287,7 +287,7 @@ function Home() {
                                 <div class="custom-text-box">
 
 
-                                    <h2 class="mb-4 text-center">สถิติผู้มาใช้บริการ</h2>
+                                    <h2 class="mb-4 text-center">สถิติผู้มารับบริการ</h2>
                                     <p class="custom-heading1">วันที่ {currentDate} </p>
                                     <div class="row">
                                         <div class="col-lg-4 col-12">
