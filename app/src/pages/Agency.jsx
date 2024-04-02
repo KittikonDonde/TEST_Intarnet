@@ -59,7 +59,7 @@ function Agency() {
                                 <strong>6. หน่วยควบคุมการติดเชื้อ</strong>
                             </a>
                             <a class="navbar-brand" href="http://www.mhcc.moph.go.th/card/">
-                                <strong>7. สุขศึกษา</strong>
+                                <strong>7. กลุ่มงานสุขศึกษา</strong>
                             </a>
                             <a class="navbar-brand" href="http://www.mhcc.moph.go.th/showOPD.php">
                                 <strong>8. งานผู้ป่วยนอก</strong>
