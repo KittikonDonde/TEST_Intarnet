@@ -7,49 +7,32 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = 5000;
 
-// Allow all origins for CORS (for development purposes)
 app.use(cors());
 app.use(bodyParser.json());
 
-const connection = mysql.createConnection({
+const pool = mysql.createPool({
+  connectionLimit: 10,
   host: '172.16.190.26',
   user: 'jump',
-  password: 'server401417', // Enter your MySQL password here
-  database: 'intranetjs',
+  password: 'server401417',
+  database: 'intranetjs'
 });
 
-//connection.connect();
-app.post('/login', (req, res) => {
-  const { username, password } = req.body;
-  // คำสั่ง SQL เพื่อค้นหาผู้ใช้จากฐานข้อมูล
-  const sql = `SELECT * FROM users WHERE username = ? AND password = ?`;
-  // ทำการ query ฐานข้อมูล
-  connection.query(sql, [username, password], (err, result) => {
-      if (err) {
-          // กรณีเกิดข้อผิดพลาดในการเชื่อมต่อกับฐานข้อมูล
-          console.error(err);
-          res.status(500).json({ success: false, message: 'Internal Server Error' });
-      } else {
-          // ตรวจสอบว่ามีผู้ใช้งานที่ตรงกับข้อมูลที่รับมาหรือไม่
-          if (result.length > 0) {
-            
-              res.json({ success: true, message: 'Login successful', user: result[0] });
-          } else {
-              res.status(401).json({ success: false, message: 'Invalid username or password' });
-          }
-      }
-  });
-});
-
-app.use('/view-file', express.static('./uploads'))
-
-
-connection.connect((err) => {
+pool.getConnection((err, connection) => {
   if (err) {
     console.error('Error connecting to MySQL:', err);
     return;
   }
   console.log('Connected to MySQL database');
+
+  // เมื่อเชื่อมต่อกับ MySQL สำเร็จ คุณสามารถปิด Pool ได้ตรงนี้
+  // pool.end((err) => {
+  //   if (err) {
+  //     console.error('Error closing MySQL pool:', err);
+  //     return;
+  //   }
+  //   console.log('MySQL pool closed');
+  // });
 });
 
 const storage = multer.diskStorage({
@@ -63,14 +46,30 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
+app.post('/login', (req, res) => {
+  const { username, password } = req.body;
+  const sql = `SELECT * FROM users WHERE username = ? AND password = ?`;
+  pool.query(sql, [username, password], (err, result) => {
+    if (err) {
+      console.error(err);
+      res.status(500).json({ success: false, message: 'Internal Server Error' });
+    } else {
+      if (result.length > 0) {
+        res.json({ success: true, message: 'Login successful', user: result[0] });
+      } else {
+        res.status(401).json({ success: false, message: 'Invalid username or password' });
+      }
+    }
+  });
+});
+
 app.post('/upload', upload.single('file'), (req, res) => {
   const { title, content } = req.body;
-  console.log(req.file);
   const { path, filename } = req.file;
   const createdAt = new Date().toISOString().slice(0, 19).replace('T', ' ');
 
   const query = 'INSERT INTO news (title, content, image, created_at) VALUES (?, ?, ?, ?)';
-  connection.query(query, [title, content, filename, createdAt], (err, result) => {
+  pool.query(query, [title, content, filename, createdAt], (err, result) => {
     if (err) {
       console.error('Error inserting news details into database:', err);
       res.status(500).send('Error uploading news');
@@ -84,13 +83,12 @@ app.post('/upload', upload.single('file'), (req, res) => {
 
 app.get('/news', (req, res) => {
   const query = 'SELECT * FROM news';
-  connection.query(query, (err, result) => {
+  pool.query(query, (err, result) => {
     if (err) {
       console.error('Error fetching news:', err);
       res.status(500).send('Error fetching news');
       return;
     }
-    // แปลง backslash (\) เป็น forward slash (/) ใน URL ของรูปภาพ
     const formattedResult = result.map(news => {
       return {
         ...news,
@@ -101,7 +99,8 @@ app.get('/news', (req, res) => {
   });
 });
 
+app.use('/view-file', express.static('./uploads'))
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
-
