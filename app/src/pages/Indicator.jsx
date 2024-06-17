@@ -98,9 +98,9 @@ function Indicator() {
 
                             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                                 <div class="featured-block d-flex justify-content-center align-items-center">
-                                    <a href="http://172.16.190.26/Thip/" class="d-block">
+                                    <a href="/QualityCenter" class="d-block">
                                         <img src="images/1/1/21.png" className="featured-block-image img-fluid" alt="" />
-                                        <p class="featured-block-text"> <strong>ตัวชี้วัดศูนย์คุณภาพ</strong></p>
+                                        <p class="featured-block-text"> <strong>ศูนย์คุณภาพ</strong></p>
                                     </a>
                                 </div>
                             </div>
